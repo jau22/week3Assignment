@@ -59,7 +59,7 @@ while (timesLooped < i2b){
     timesLooped++;
 }
 
-console.log("All names are added together." + namesTogether)
+console.log("All names are added together. " + namesTogether)
 
 //3,4
 console.log("names[(names.length-1)] gives me the last array: " + names[(names.length-1)]);
@@ -157,10 +157,12 @@ console.log(avgCompare(array9, ages));
 function willBuyDrink(isHotOutside,moneyInPocket){
     if(isHotOutside == true && moneyInPocket > 10.50){
         return true;
-    } 
+    } else {
+        return false;
+    }
 }
 
-console.log(willBuyDrink(true,5));
+console.log(willBuyDrink(true,20));
 
 /**13 Phone Wallet Keys.
  This is a function that addresses a scenario when I leave the house without one or more of these essentials**/
